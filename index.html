@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS practice</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="w-50 mx-auto my-5 border border-2 shadow p-3 text-white">
+    <label>name</label>
+    <input type="text" class="form-control" id="productName">
+    <label>Type</label>
+    <input type="text" class="form-control" id="productType">
+    <label>price</label>
+    <input type="text" class="form-control" id="productPrice">
+    <label>notes</label>
+    <input type="text" class="form-control" id="ProductNotes">
+
+    <button  onclick="UpdateClickButton()" id="UpdateButton" class="btn btn-success p-3 mt-3 text-white d-none">Update Data</button>
+    <button id="clickButton" class="btn btn-info p-3 mt-3 text-white" onclick="Addproduct()">click</button>
+    <button class="btn btn-info p-3 mt-3 text-white" onclick="clearData()">Clear</button>
+
+
+  </div>
+  <input onkeyup="searchbar()" type="search" class="mx-auto form-control w-25 my-4" id="searchBar" placeholder="search...">
+   <div class="container text-white">
+       <table class=" one table table-striped|sm|bordered|hover|inverse table-inverse table-responsive">
+         <thead class="thead-inverse|thead-default">
+           <tr>
+             <th>Product</th>
+             <th>name</th>
+             <th>type</th>
+             <th>price</th>
+             <th>note</th>
+             <th>Delete</th>
+             <th>Update</th>
+           </tr>
+           </thead>
+           <tbody id="T_Body">
+             
+
+           </tbody>
+       </table>
+       
+
+
+   </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
